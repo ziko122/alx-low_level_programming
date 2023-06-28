@@ -37,5 +37,5 @@ int _atoi(char *s)
 			f = 0;
 		}
 		i++;
-	}
+}
 
