@@ -1,8 +1,5 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
 
 /**
  * read_textfile - Read text file and print to STDOUT.
@@ -40,8 +37,8 @@ if (bytes_read == -1)
 
 while (bytes_read > 0)
 {
-	bytes_written = write(STDOUT_FILENO, buf + total_written, bytes_read);
-	if (bytes_written == -1)
+bytes_written = write(STDOUT_FILENO, buf + total_written, bytes_read);
+if (bytes_written == -1)
 {
 free(buf);
 close(fd);
