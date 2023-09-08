@@ -18,7 +18,7 @@ int _strlen(char *s)
 }
 
 /**
- * append_text_to_file appends text to a file
+ * append_text_to_file - Appends text at the end of a file.
  * @filename: name of file to create
  * @text_content: text to write
  *
